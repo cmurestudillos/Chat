@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 // Uso de middleware
-app.use(express.static('client'));
+app.use(express.static(__dirname + 'client'));
 
 //Creacion de una ruta de Testing del servicio
 app.get('/hola-mundo', (req, res) => {
@@ -33,6 +33,6 @@ io.on('connection', (socket) => {
 });
 
 //Creamos el servidor y lo ponemos a la escucha
-server.listen(6677, () => {
-    console.log("Servidor esta funcionando en https://chatnodejs-socketio.herokuapp.com/");
+server.listen(3000, () => {
+    console.log("Servidor esta funcionando en http://localhost:3000");
 });
