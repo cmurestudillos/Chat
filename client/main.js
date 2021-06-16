@@ -1,4 +1,4 @@
-var socket = io.connect('http://10.208.178.80:6677', {'forceNew':true});
+var socket = io.connect('https://chatnodejs-socketio.herokuapp.com/', {'forceNew':true});
 
 socket.on('messages', (data) => {
     console.log(data);

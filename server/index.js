@@ -16,7 +16,7 @@ app.get('/hola-mundo', (req, res) => {
 var message = [{
     id: 1,
     texto:'Bienvenido al Chat',
-    nickname: 'Bot - cmurestudillos.es'
+    nickname: 'Bot'
 }];
 
 //Recibir conexiones del cliente
@@ -34,5 +34,5 @@ io.on('connection', (socket) => {
 
 //Creamos el servidor y lo ponemos a la escucha
 server.listen(6677, () => {
-    console.log("Servidor esta funcionando en http://localhost:6677");
+    console.log("Servidor esta funcionando en https://chatnodejs-socketio.herokuapp.com/");
 });
