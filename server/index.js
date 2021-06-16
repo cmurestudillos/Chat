@@ -30,6 +30,6 @@ io.on('connection', (socket) => {
 });
 
 //Creamos el servidor y lo ponemos a la escucha
-server.listen(process.env.PORT || 3000, () => {
+server.listen(3000, () => {
     console.log("Servidor listo en http://localhost:" + server.address().port);
 });

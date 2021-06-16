@@ -3,7 +3,6 @@ var socket = io();
 
 socket.on('messages', (data) => {
     console.log(data);
-
     render(data);
 });
 
