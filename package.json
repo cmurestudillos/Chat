@@ -2,7 +2,7 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Aplicacion de chat con Socket.io y Node.js",
-  "main": "server/index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
