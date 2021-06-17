@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 // Uso de middleware
-app.use(express.static('client'));
+app.use(express.static(__dirname + '/public'));
 
 //Creacion de una ruta de Testing del servicio
 // app.get('/hola-mundo', (req, res) => {
@@ -30,6 +30,6 @@ io.on('connection', (socket) => {
 });
 
 //Creamos el servidor y lo ponemos a la escucha
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log("Servidor listo en http://localhost:" + server.address().port);
 });
