@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 // Uso de middleware
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/client'));
 
 //Creacion de una ruta de Testing del servicio
 // app.get('/hola-mundo', (req, res) => {
